@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  background-color: var(--grey900);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey800);
+  color: var(--white);
+  align-items: center;
+  border-radius: 20px;
+  width: 350px;
+  margin: 20px 10px 0 20px;
+}
+
+.profileImage{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px 20px;
+}
+
+.name{
+  font-size: 24px;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.location{
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--green);
+}
+
+.description{
+  margin: 20px;
+  margin-bottom: 5px;
+}
+
+.links ul{
+  text-align: center;
+  list-style: none;
+  padding: 20px;
+  width: 300px;
+  font-weight: 500;
+}
+
+li{
+  background-color: var(--grey700);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+li:hover{
+  background-color: var(--green);
+  color: var(--grey900);
+  cursor: pointer;
+}
+
+.attribution{
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a{
+  color: var(--green);
+}
