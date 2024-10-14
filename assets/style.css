@@ -68,17 +68,26 @@ body, html{
 }
 
 li{
+  display: flex;
   background-color: var(--grey700);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 li:hover{
   background-color: var(--green);
   color: var(--grey900);
   cursor: pointer;
+  font-weight: 500;
+}
+
+.social{
+  width: 30px;
+  height: 30px;
 }
 
 .attribution{
